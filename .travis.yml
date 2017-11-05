@@ -11,9 +11,8 @@ cache:
 before_script:
   - npm install
   - npm install coveralls
-  - npm install instanbul
 
 script: npm test
 
 after_success:
-  - npm run istanbul cover _mocha --timeout 5000 --exit -- --report lcovonly && coveralls"
+  - npm run istanbul cover _mocha --timeout 5000 --exit -- --report lcovonly && coveralls
