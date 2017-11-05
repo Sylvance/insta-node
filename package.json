@@ -1,0 +1,42 @@
+{
+  "name": "insta-node",
+  "version": "0.0.4",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "test": "mocha --timeout 5000 --exit",
+    "cover": "istanbul cover _mocha --timeout 5000 --exit",
+    "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "config": "^1.27.0",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.2",
+    "mongoose": "^4.13.0",
+    "morgan": "^1.9.0",
+    "pug": "^2.0.0-rc.4",
+    "serve-favicon": "^2.4.5"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-http": "^3.0.0",
+    "coveralls": "^3.0.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^4.0.1",
+    "mocha-lcov-reporter": "^1.3.0"
+  },
+  "description": "Nodejs Instagram fullstack clone",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sylvance/insta-node.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Sylvance/insta-node/issues"
+  },
+  "homepage": "https://github.com/Sylvance/insta-node#readme"
+}
